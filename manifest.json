@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "QR Code Reader",
+  "version": "1.0",
+  "description": "Reads QR codes from the current webpage by scanning the visible area.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Scan QR Code"
+  }
+}

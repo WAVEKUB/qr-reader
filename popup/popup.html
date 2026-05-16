@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Reader</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="icon-pulse">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="qr-icon"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      </div>
+      <h2>QR Scanner</h2>
+    </div>
+
+    <div class="status-box" id="status-box">
+      <div class="loader" id="loader"></div>
+      <p id="status-text">Scanning for QR code...</p>
+    </div>
+
+    <div class="result-container hidden" id="result-container">
+      <p class="result-label">Result Found</p>
+      <div class="result-content">
+        <a id="result-link" href="#" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+      <button id="copy-btn" class="btn">Copy Link</button>
+    </div>
+  </div>
+
+  <script src="../lib/jsQR.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
