@@ -121,15 +121,31 @@ body {
   font-weight: 600;
 }
 
+.result-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .result-content {
   background: var(--panel-bg);
   padding: 12px 16px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.05);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px;
   word-break: break-all;
 }
 
-.result-content a {
+.result-index {
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.result-content a,
+.result-content span:last-child {
   color: var(--text-main);
   text-decoration: none;
   font-size: 14px;
